@@ -136,6 +136,36 @@ ul li a:hover::after {
   font-weight: 600;
 }
 
+#navbar .cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+#navbar span {
+  font-family: math;
+}
+
+#navbar .bounce {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+}
+
 #mobile {
   display: none;
   align-items: center;
@@ -1002,6 +1032,10 @@ color: #fff;
 
 #cart table tbody  td {
   font-size: 13px;
+}
+
+#cart table tbody  td i {
+  cursor: pointer;
 }
 
 #cart-add {
